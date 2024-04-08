@@ -1,0 +1,42 @@
+.board {
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.occupied {
+    cursor: pointer;
+}
+
+.black {
+    background-color: brown;
+}
+
+.letter {
+    position: absolute;
+    top: -30px;
+    font-size: 20px; 
+}
+
+.number {
+    position: absolute;
+    left: -30px;
+    font-size: 20px;
+}
